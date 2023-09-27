@@ -29,20 +29,6 @@
     background-size: contain;
 }
 
-/*** Spinner ***/
-#spinner {
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.5s ease-out, visibility 0s linear 0.5s;
-    z-index: 99999;
-}
-
-#spinner.show {
-    transition: opacity 0.5s ease-out, visibility 0s linear 0s;
-    visibility: visible;
-    opacity: 1;
-}
-
 /*** Button ***/
 .btn {
     font-weight: 500;
@@ -82,15 +68,6 @@
 }
 
 /*** Navbar ***/
-.fixed-top {
-    transition: 0.5s;
-}
-
-.top-bar {
-    height: 45px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.07);
-}
-
 .navbar .dropdown-toggle::after {
     border: none;
     content: "\f107";
@@ -201,34 +178,6 @@
     padding-top: 25px;
 }
 
-.section-header::before {
-    position: absolute;
-    content: "";
-    width: 60px;
-    height: 2px;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    background: var(--primary);
-}
-
-.section-header::after {
-    position: absolute;
-    content: "";
-    width: 90px;
-    height: 2px;
-    top: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: var(--secondary);
-}
-
-.section-header.text-start::before,
-.section-header.text-start::after {
-    left: 0;
-    transform: translateX(0);
-}
-
 /*** About ***/
 .about-img img {
     position: relative;
@@ -301,56 +250,6 @@
 
 .product-item small a:hover {
     color: var(--primary) !important;
-}
-
-/*** Testimonial ***/
-.testimonial-carousel .owl-item .testimonial-item img {
-    width: 60px;
-    height: 60px;
-}
-
-.testimonial-carousel .owl-item .testimonial-item,
-.testimonial-carousel .owl-item .testimonial-item * {
-    transition: 0.5s;
-}
-
-.testimonial-carousel .owl-item.center .testimonial-item {
-    background: var(--primary) !important;
-}
-
-.testimonial-carousel .owl-item.center .testimonial-item * {
-    color: #ffffff !important;
-}
-
-.testimonial-carousel .owl-item.center .testimonial-item i {
-    color: var(--secondary) !important;
-}
-
-.testimonial-carousel .owl-nav {
-    margin-top: 30px;
-    display: flex;
-    justify-content: center;
-}
-
-.testimonial-carousel .owl-nav .owl-prev,
-.testimonial-carousel .owl-nav .owl-next {
-    margin: 0 12px;
-    width: 50px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--dark);
-    border: 2px solid var(--primary);
-    border-radius: 50px;
-    font-size: 18px;
-    transition: 0.5s;
-}
-
-.testimonial-carousel .owl-nav .owl-prev:hover,
-.testimonial-carousel .owl-nav .owl-next:hover {
-    color: #ffffff;
-    background: var(--primary);
 }
 
 /*** Footer ***/
