@@ -43,19 +43,10 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav ms-auto p-4 p-lg-0">
-                    <a href="index.html" class="nav-item nav-link active">Home</a>
-                    <a href="about.html" class="nav-item nav-link">About Us</a>
-                    <a href="product.html" class="nav-item nav-link">Products</a>
-                    <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                        <div class="dropdown-menu m-0">
-                            <a href="blog.html" class="dropdown-item">Blog Grid</a>
-                            <a href="feature.html" class="dropdown-item">Our Features</a>
-                            <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                            <a href="404.html" class="dropdown-item">404 Page</a>
-                        </div>
-                    </div>
-                    <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+                    <a href="#hero" class="nav-item nav-link active">Home</a>
+                    <a href="#about" class="nav-item nav-link">About</a>
+                    <a href="#products" class="nav-item nav-link">Products</a>
+                    <a href="#blog" class="nav-item nav-link">Blog</a>
                 </div>
                 <div class="d-none d-lg-flex ms-2">
                     <a class="btn-sm-square bg-white rounded-circle ms-3" href="">
@@ -74,7 +65,7 @@
     <!-- Navbar End -->
 
     <!-- Carousel Start -->
-    <div class="container-fluid p-0 mb-5 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container-fluid p-0 mb-5 wow fadeIn" data-wow-delay="0.1s" id="hero">
         <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -121,8 +112,11 @@
     <!-- Carousel End -->
 
     <!-- About Start -->
-    <div class="container-xxl py-5">
+    <div class="container-xxl py-5" id="about">
         <div class="container">
+            <div class="section-header text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <h1 class="display-5 mb-3">About Us</h1>
+            </div>
             <div class="row g-5 align-items-center">
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
                     <div class="about-img position-relative overflow-hidden p-5 pe-0">
@@ -143,7 +137,7 @@
     <!-- About End -->
 
     <!-- Product Start -->
-    <div class="container-xxl py-5">
+    <div class="container-xxl py-5" id="products">
         <div class="container">
             <div class="row g-0 gx-5 align-items-end">
                 <div class="col-lg-6">
@@ -203,7 +197,7 @@
     <!-- Product End -->
 
     <!-- Blog Start -->
-    <div class="container-xxl py-5">
+    <div class="container-xxl py-5" id="blog">
         <div class="container">
             <div class="section-header text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
                 <h1 class="display-5 mb-3">Latest Blog</h1>
